@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="健康的便當主食，提供一天活力來源">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="icon" type="image/png"  href="images/favicon.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css">
+    <title>胖胖雞腿飯</title>
+</head>
+<body>
+	<div class="top">
+		<div id="chat" class="chat">
+			<img onclick="close_chat()" src="images/x.png" style="cursor: pointer;">
+			即時線上聯絡胖胖雞腿飯
+			<div class="feedback-send start">送出</div>
+		</div>
+		<div id="chat-bottom" class="chat-bottom"></div>
+		<div style="height:24px"></div>
+		<img onclick="show_chat()" src="images/與胖胖雞腿飯即時聯絡.png" style="cursor: pointer;">
+		<div style="height:24px"></div>
+		<a href="#top"><img class="topbtn" src="images/top.png"></a>
+	</div>
+	<div class="page-header">
+		<h1><img class="logo" src="images/logo.png"></h1>
+		<h1><img class="logo-noword" src="images/logo-noword.png"></h1>
+		<div class="right-btn">
+			<div class="bbb">
+				<img src="images/logout.png">
+				<span>登出</span>
+			</div>
+			<div class="bbb">
+				<img src="images/book.png">
+				<span>訂單查詢</span>
+			</div>
+			<div class="bbb">
+				
+				<ul id="menu2">
+					<li>
+						<img class="menuBtn" src="images/menu.png">
+						<ul>
+							<li><a class="nav-link"  href="#news">最新消息</a></li>
+							<li><a class="nav-link" href="#about">品牌故事</a></li>
+							<li><a class="nav-link" href="#list">菜單介紹</a></li>
+							<li><a class="nav-link" href="#store">門市據點</a></li>
+							<li><a class="nav-link" href="#contact">聯絡方式</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<img src="images/badgirl.png" style="cursor: pointer;">
+		</div>
+	</div>
+	<div class="main-nav" id="menu">
+		<a class="nav-link" href="#news">最新消息</a>
+		<a class="nav-link" href="#about">品牌故事</a>
+		<a class="nav-link" href="#list">菜單介紹</a>
+		<a class="nav-link" href="#store">門市據點</a>
+		<a class="nav-link" href="#contact">聯絡方式</a>
+	</div>
+
+	<div id="home" class="background-img">
+		<div class="slide">
+			<img class="slide-pic" style="" src="images/banner-1.jpg">
+			<img class="slide-pic" style="" src="images/banner-2.jpg">
+			<img class="slide-pic" style="" src="images/banner-3.jpg">
+			<div class="slide-btn">
+				<img class="slide-left" onclick="img_previous()" src="images/top.png">
+				<img class="slide-right" onclick="img_next()" src="images/top.png">
+			</div>
+			<div class="slide-dot">
+				<div class="dot" style="" onclick="img_dot(0)"></div>
+				<div class="dot" style="" onclick="img_dot(1)"></div>
+				<div class="dot" style="" onclick="img_dot(2)"></div>
+			</div>
+		</div>
+		<div class="home-content wrapper">
+			<a name="" id="news"></a><div class="space"></div>
+			<div style="display:flex;">
+				<div class="title">最新消息/</div>
+				<div class="title smalltitle">NEWS</div>
+			</div>
+			<div class="news">
+				<div class="post-info">
+					<p class="post-date">12 <span>12</span></p>
+					<div class="news-banner">
+						<div class="banner-pic">
+							<img src="images/news1.png">
+							<img class="triangle" src="images/triangle.png">
+							<div class="triangle-word">
+								<div style="display: flex;">歡慶<p>楠梓店</p>開幕！</div>
+								<div>開幕當月便當9折優惠</div>
+							</div>
+						</div>					
+						<h2 class="post-title">胖胖雞腿飯又增加新據點了！邀請您於開幕慶期間2022.12.20-2023.01.20，來到楠梓店與我們一同見證胖胖雞腿飯得里程碑。全店便當一律9折優惠！</h2>
+					</div>
+				</div>
+				<div class="post-info">
+					<p class="post-date">12 <span>25</span></p>
+					<div class="news-banner">
+						<div class="banner-pic">
+							<img src="images/news2.png">
+							<img class="triangle" src="images/triangle.png">
+							<div class="triangle-word">
+								<div style="display: flex;">我們種下第<p>1000顆樹！</p></div>
+								<div>保育環境我們與您一起</div>
+							</div>
+						</div>	
+						<h2 class="post-title">胖胖雞腿飯長期與地方環境保育團體合作，定期邀請員工參與種樹的活動，一棵棵親手種下。實踐取之於社會用之於社會的初衷，達到企業責任，這次種第下1000棵只是個開始！聖誕節快樂。</h2>
+					</div>
+				</div>
+			</div>
+			<a name="" id="about"></a><div style="height: 80px;"></div>
+			<div style="display:flex;">
+				<div class="title">品牌故事/</div>
+				<div class="title smalltitle">ABOUT</div>
+			</div>
+			<div class="about">
+				<div class="about-item">
+					<div class="about-item-img">
+						<img src="images/about1.png">
+					</div>
+					<div class="about-title">創立理念</div>
+					<div class="post-title">
+						用安心履歷與當季的食材，加進師傅滿滿的愛心，希望拿到便當的每個人，都能感受到我們其中的用心，每一份便當都是我們最棒的作品！胖胖雞腿飯想做的不只是果腹，是走進您的每一天日常。
+					</div>
+				</div>
+				<div class="about-item">
+					<div class="about-item-img">
+						<img src="images/about2.png">
+					</div>
+					<div class="about-title">經營理念</div>
+					<div class="post-title">
+						與有品質把關的小農簽約，加上有紀律的控管運送時程與溫度，加上嚴格的備膳人員篩選和外場服務人員的訓練，大家一起努力拼出了胖胖雞腿飯這塊招牌。也邀請大家加入我們的行列！
+					</div>
+				</div>
+				<div class="about-item">
+					<div class="about-item-img">
+						<img src="images/about3.png">
+					</div>
+					<div class="about-title">企業理念</div>
+					<div class="post-title">
+						取之於社會，用之於社會，胖胖雞腿飯相當認同企業責任的理念，不單是每個分店都無限提供愛心便當，也與社福團體有密切的合作，定期提供所需的便當數量給獨居的長輩，環保部分也積極投入種樹造林，與大家一同關心環境。
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="home-content wrapper orange">
+			<a name="" id="list"></a><div style="height: 80px;"></div>
+			<div style="display:flex;margin-bottom:80px">
+				<div class="title">菜單介紹/</div>
+				<div class="title smalltitle">LIST</div>
+			</div>
+			<div class="list">
+				<div class="list-item">
+					<div class="list-item-img"><img src="images/雞腿飯.jpg"></div>
+					<div class="list-word">
+						<div class="list-title">雞腿飯</div>
+						<div class="list-smalltitle">主食 : 大雞腿</div>
+						<div class="list-smalltitle">配菜 : 新鮮時蔬(4樣)</div>
+						<div class="list-smalltitle">白飯</div>
+						<div style="flex-grow:1"></div>
+						<div class="list-smalltitle list-money">100元</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="list-item-img"><img src="images/鯖魚飯.jpg"></div>
+					<div class="list-word">
+						<div class="list-title">鯖魚飯</div>
+						<div class="list-smalltitle">主食 : 鯖魚</div>
+						<div class="list-smalltitle">配菜 : 新鮮時蔬(4樣)</div>
+						<div class="list-smalltitle">白飯</div>
+						<div style="flex-grow:1"></div>
+						<div class="list-smalltitle list-money">65元</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="list-item-img"><img src="images/鱈魚飯.jpg"></div>
+					<div class="list-word">
+						<div class="list-title">鱈魚飯</div>
+						<div class="list-smalltitle">主食 : 鱈魚排</div>
+						<div class="list-smalltitle">配菜 : 新鮮時蔬(4樣)</div>
+						<div class="list-smalltitle">白飯</div>
+						<div style="flex-grow:1"></div>
+						<div class="list-smalltitle list-money">95元</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="list-item-img"><img src="images/排骨飯.jpg"></div>
+					<div class="list-word">
+						<div class="list-title">排骨飯</div>
+						<div class="list-smalltitle">主食 : 滷排骨</div>
+						<div class="list-smalltitle">配菜 : 新鮮時蔬(4樣)</div>
+						<div class="list-smalltitle">白飯</div>
+						<div style="flex-grow:1"></div>
+						<div class="list-smalltitle list-money">75元</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="list-item-img"><img src="images/控肉飯.jpg"></div>
+					<div class="list-word">
+						<div class="list-title">控肉飯</div>
+						<div class="list-smalltitle">主食 : 控肉</div>
+						<div class="list-smalltitle">配菜 : 新鮮時蔬(4樣)</div>
+						<div class="list-smalltitle">白飯</div>
+						<div style="flex-grow:1"></div>
+						<div class="list-smalltitle list-money">65元</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="list-item-img"><img src="images/滷雞腿飯.jpg"></div>
+					<div class="list-word">
+						<div class="list-title">滷雞腿飯</div>
+						<div class="list-smalltitle">主食 : 滷雞腿</div>
+						<div class="list-smalltitle">配菜 : 新鮮時蔬(4樣)</div>
+						<div class="list-smalltitle">白飯</div>
+						<div style="flex-grow:1"></div>
+						<div class="list-smalltitle list-money">70元</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="list-item-img"><img src="images/雞柳飯.jpg"></div>
+					<div class="list-word">
+						<div class="list-title">雞柳飯</div>
+						<div class="list-smalltitle">主食 : 條狀的雞胸肉</div>
+						<div class="list-smalltitle">配菜 : 新鮮時蔬(4樣)</div>
+						<div class="list-smalltitle">白飯</div>
+						<div style="flex-grow:1"></div>
+						<div class="list-smalltitle list-money">65元</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="list-item-img"><img src="images/雞排飯.jpg"></div>
+					<div class="list-word">
+						<div class="list-title">雞排飯</div>
+						<div class="list-smalltitle">主食 : 炸雞排</div>
+						<div class="list-smalltitle">配菜 : 新鮮時蔬(4樣)</div>
+						<div class="list-smalltitle">白飯</div>
+						<div style="flex-grow:1"></div>
+						<div class="list-smalltitle list-money">100元</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="home-content wrapper">
+			<a name="" id="store"></a><div class="space space2"></div>
+			<div style="display:flex;">
+				<div class="title">門市據點/</div>
+				<div class="title smalltitle">STORE</div>
+			</div>
+			<div class="store">
+				<div class="store-item">
+					<div class="store-map store-map-min">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.247176070723!2d120.310616!3d22.607243200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0364dea77075%3A0x1c86667fb73b5616!2zODA25Y-w54Gj6auY6ZuE5biC5YmN6Y6u5Y2A5rCR5qyK5LqM6LevMTk56Jmf!5e0!3m2!1szh-TW!2shk!4v1669686758178!5m2!1szh-TW!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="store-info">
+						<div class="store-info-word-outside">
+							<div class="store-name">民權店</div>
+							<div class="store-info-word"><h2>營業時間：</h2></div>
+							<div class="store-info-word">週一到週五10：00～14：00/16：00～20：00</div>
+							<div class="store-info-word">週六10:00～16:00</div>
+							<div class="store-info-word">週日公休</div>
+							<div class="store-info-word"><h2>電話：</h2>07-3648907</div>
+							<div class="store-info-word"><h2>地址：</h2>高雄市前鎮區民權二路199號</div>
+						</div>
+						<div class="store-pic">
+							<img src="images/store-1.jpg">
+							<img class="store-pic2" src="images/eat-1.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="store-item store-item-reverse">
+					<div class="store-map store-map-min">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.247176070723!2d120.310616!3d22.607243200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0364dea77075%3A0x1c86667fb73b5616!2zODA25Y-w54Gj6auY6ZuE5biC5YmN6Y6u5Y2A5rCR5qyK5LqM6LevMTk56Jmf!5e0!3m2!1szh-TW!2shk!4v1669686758178!5m2!1szh-TW!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="store-info">
+						<div class="store-info-word-outside">
+							<div class="store-name store-word-wrap">三多店</div>
+							<div class="store-info-word store-word-wrap"><h2>營業時間：</h2></div>
+							<div class="store-info-word store-word-wrap">週一到週五11：30～14：00/17：00～20：00</div>
+							<div class="store-info-word store-word-wrap">週六10:00～16:00</div>
+							<div class="store-info-word store-word-wrap">週日公休</div>
+							<div class="store-info-word store-word-wrap"><h2>電話：</h2>07-3315607</div>
+							<div class="store-info-word store-word-wrap"><h2>地址：</h2>高雄市苓雅區三多路70號</div>
+						</div>
+						<div class="store-pic store-word-wrap">
+							<img src="images/store-2.jpg">
+							<img class="store-pic2" src="images/eat-2.jpg">
+						</div>
+					</div>
+
+				</div>
+				<div class="store-item">
+					<div class="store-map store-map-min">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.083500282028!2d120.2967932434079!3d22.72513758687699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0f0aa41aec47%3A0x3fa4e70ea642d70d!2zODEx5Y-w54Gj6auY6ZuE5biC5qWg5qKT5Y2A55uK576k6LevNzDomZ8!5e0!3m2!1szh-TW!2shk!4v1669686924893!5m2!1szh-TW!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+					<div class="store-info">
+						<div class="store-info-word-outside">
+							<div class="store-name">楠梓店</div>
+							<div class="store-info-word"><h2>營業時間：</h2></div>
+							<div class="store-info-word">週一到週五10：00～14：00/16：00～20：00</div>
+							<div class="store-info-word">週六10:00～16:00</div>
+							<div class="store-info-word">週日公休</div>
+							<div class="store-info-word"><h2>電話：</h2>07-5568902</div>
+							<div class="store-info-word"><h2>地址：</h2>高雄市楠梓區益群路70號</div>
+						</div>
+						<div class="store-pic">
+							<img src="images/store-3.jpg">
+							<img class="store-pic2" src="images/eat-3.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home-content wrapper orange">
+		<a name="" id="contact"></a><div class="space"></div>
+		<div style="display:flex;margin-bottom:80px">
+			<div class="title">聯絡方式/</div>
+			<div class="title smalltitle">CONTACT</div>
+		</div>
+		<div class="store-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.6188630566407!2d120.30006821551228!3d22.630703585152958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e048946fa4b13%3A0x13e6fc78cdba81a1!2zODAw5Y-w54Gj6auY6ZuE5biC5paw6IiI5Y2A5Lit5bGx5LiA6LevMTAw6JmfNg!5e0!3m2!1szh-TW!2shk!4v1669687038617!5m2!1szh-TW!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<div class="company-info">
+			<div class="company-left">
+				<div class="store-name company-name" style="">總公司</div>
+				<div class="company-word"><img src="images/company1.png">(806)高雄市新興區中山一路100號6樓</div>
+				<div class="company-word"><img src="images/company2.png">(07)331-5437</div>
+				<div class="company-word"><img src="images/company3.png">週一 ～ 週六 08:00 – 12:00 / 13:00 – 21:00</div>
+				<div class="fb-yt-logo">
+					<img src="images/fb.png">
+					<img src="images/youtube.png">
+				</div>
+				<div class="bottom-logo">
+					<img src="images/logo-bottom.png">
+					吃得飽 最重要
+				</div>
+			</div>
+			<div class="company-right">
+				<div class="feedback-title">Name</div>
+				<input class="feedback-block" />
+				<div class="feedback-title">Telephone</div>
+				<input class="feedback-block" />
+				<div class="feedback-title">Message</div>
+				<textarea class="feedback-block" style="height:132px"></textarea>
+				<div class="feedback-send">送出</div>
+			</div>
+		</div>
+	</div>
+	<footer>2022 © 胖胖雞腿飯</footer>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>
+<script src="modernizr.js"></script>
+<script src="func.js"></script>
