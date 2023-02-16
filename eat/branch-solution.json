@@ -1,0 +1,28 @@
+{
+	[
+		{
+		  "name" : "一車樹枝",
+		  "count" : 300,
+		  "cost" : 450,
+		  "pic" : "branch-solution-1.png"
+		},
+		{
+		  "name" : "一袋樹枝",
+		  "count" : 120,
+		  "cost" : 220,
+		  "pic" : "branch-solution-2.png"
+		},
+		{
+		  "name" : "一堆樹枝",
+		  "count" : 30,
+		  "cost" : 60,
+		  "pic" : "branch-solution-3.png"
+		},
+		{
+		  "name" : "一些樹枝",
+		  "count" : 5,
+		  "cost" : -1,
+		  "pic" : "branch-solution-4.png"
+		}
+	]
+}
