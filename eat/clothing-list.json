@@ -1,0 +1,14 @@
+{
+	"clothings":[
+					{
+						"type" : 0,
+						"items":[
+									{
+									  "name" : "神秘人海苔",
+									  "cost" : 100,
+									  "pic" : "cloth_face_1.png"
+									},
+								]
+					},
+			]
+}
